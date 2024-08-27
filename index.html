@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Cards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .profile-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .profile-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .profile-card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .profile-card h2 {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .profile-card p {
+            font-size: 14px;
+            color: #777;
+            margin: 5px 0;
+            word-wrap: break-word;
+        }
+
+        .profile-title {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .social-icons a {
+            color: #538392;
+            font-size: 18px;
+            margin-top: 10px;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #39576a;
+        }
+
+        .leader {
+            background-color: #b3e2a7;
+            border: 2px solid #80b9ad;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .profile-card img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .profile-card h2 {
+                font-size: 18px;
+            }
+
+            .profile-card p {
+                font-size: 13px;
+            }
+
+            .profile-title {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile-cards">
+        <div class="profile-card leader">
+            <div class="profile-title">Leader</div>
+            <img src="Aiyen_Rivera.jfif" alt="Leader Image">
+            <h2>Aiyen Rivera</h2>
+            <p>riveraaiyenbsit@plmun.edu.ph</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/domi.rivera.9250?mibextid=LQQJ4d"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="profile-title">Member</div>
+            <img src="Joselito_Francisco.jfif" alt="Member Image">
+            <h2>Joselito Francisco</h2>
+            <p>franciscojoselitobsit@plmun.edu.ph</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/el.vitor.986?mibextid=LQQJ4d"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="profile-title">Member</div>
+            <img src="Cyrus_Gabilan.jfif" alt="Member Image">
+            <h2>Cyrus Gabilan</h2>
+            <p>gabilancyrus_bsit@plmun.edu.ph</p>
+            <div class="social-icons">
+                <a href="
+https://www.facebook.com/Cyyy.Gbln?mibextid=LQQJ4d"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="profile-title">Member</div>
+            <img src="Elmer_Apit.jfif" alt="Member Image">
+            <h2>Elmer Apit</h2>
+            <p>apitelmer_bsit@plmun.edu.ph</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/Apit032?mibextid=LQQJ4d"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="profile-title">Member</div>
+            <img src="Cris_Julian_Berroya.jfif" alt="Member Image">
+            <h2>Cris Julian Berroya</h2>
+            <p>berroyacrisjulian_bsit@plmun.edu.ph</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/Julian.Berroya?mibextid=LQQJ4d"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
